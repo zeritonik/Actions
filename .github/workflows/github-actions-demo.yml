@@ -1,0 +1,13 @@
+name: Try actions
+on: [ push, workflow_dispatch ]
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: echo "Hello world!"
+  job2:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Goodbye world!"
+
